@@ -1,0 +1,46 @@
+/* Configurações Globais de Estilo */
+html {
+    scroll-behavior: smooth;
+    background-color: #0B0E17;
+    color: #F8FAFC;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Animação personalizada para o planeta girar levemente */
+@keyframes spinSlow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+    display: inline-block;
+    animation: spinSlow 20s linear infinite;
+}
+
+/* Efeito de brilho customizado nos cards do cardápio */
+.card-hover {
+    transition: all 0.3s ease-in-out;
+}
+
+.card-hover:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px -5px rgba(255, 140, 0, 0.15), 0 8px 10px -6px rgba(255, 140, 0, 0.1);
+}
+
+/* Barra de rolagem personalizada estilo espacial */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #05070B;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1E293B;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #FF8C00;
+}

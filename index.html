@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaria Planetário | Uma viagem de sabor além da imaginação</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- FontAwesome para Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Nosso Arquivo de Estilo Personalizado (CSS) -->
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        spaceBlack: '#0B0E17',
+                        cosmicDark: '#05070B',
+                        solarOrange: '#FF8C00',
+                        stellarGold: '#FFC700',
+                        neonCyan: '#00D2FF',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-spaceBlack text-slate-100 font-sans antialiased selection:bg-solarOrange selection:text-white">
+
+    <!-- HEADER / NAVBAR -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-cosmicDark/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <span class="text-2xl animate-spin-slow">🪐</span>
+                <div>
+                    <h1 class="font-bold text-lg tracking-wider text-stellarGold">PIZZARIA PLANETÁRIO</h1>
+                    <span class="text-xs text-slate-400">Desde 1997 🚀</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+                <a href="#inicio" class="hover:text-solarOrange transition">Início</a>
+                <a href="#cardapio" class="hover:text-solarOrange transition">Cardápio Espacial</a>
+                <a href="#unidades" class="hover:text-solarOrange transition">Unidades</a>
+            </nav>
+            <div>
+                <a href="https://deliverydireto.com.br/pizzariaplanetario/pizzariaplanetario?s=w" target="_blank"
+                    class="bg-solarOrange hover:bg-orange-600 text-white font-bold px-5 py-2.5 rounded-full shadow-lg shadow-orange-500/30 transition transform hover:scale-105 inline-flex items-center">
+                    <i class="fa-solid fa-rocket mr-2"></i> Peça Online
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio"
+        class="pt-32 pb-20 md:pt-44 md:pb-32 relative overflow-hidden bg-gradient-to-b from-cosmicDark to-spaceBlack">
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div>
+                <span
+                    class="inline-block bg-solarOrange/10 text-solarOrange border border-solarOrange/30 text-xs font-semibold px-4 py-1.5 rounded-full mb-6 uppercase tracking-widest">
+                    🌌 As Melhores Pizzas e Esfihas da Região
+                </span>
+                <h1 class="text-4xl sm:text-6xl font-black tracking-tight mb-6 text-white">
+                    UMA VIAGEM DE SABOR <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-solarOrange to-stellarGold">ALÉM DA
+                        IMAGINAÇÃO!</span>
+                </h1>
+                <p class="text-lg text-slate-300 mb-8">
+                    Inspirado nas galáxias e com sabor de outro mundo. Média de 4.6 estrelas em Mogi Guaçu e Mogi Mirim.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="https://deliverydireto.com.br/pizzariaplanetario/pizzariaplanetario?s=w" target="_blank"
+                        class="bg-solarOrange hover:bg-orange-600 text-white font-bold px-8 py-4 rounded-xl shadow-lg transition text-lg text-center flex items-center justify-center">
+                        <i class="fa-solid fa-cart-shopping mr-2"></i> Fazer Pedido Online 🍕
+                    </a>
+                </div>
+            </div>
+            <div class="relative">
+                <div
+                    class="absolute -inset-1 bg-gradient-to-r from-solarOrange to-neonCyan rounded-3xl blur opacity-30 animate-pulse">
+                </div>
+                <div class="relative rounded-3xl overflow-hidden border border-slate-700 shadow-2xl bg-slate-900">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?auto=format&fit=crop&w=800&q=80"
+                        alt="Pizza Especial Planetário"
+                        class="w-full h-96 object-cover hover:scale-105 transition duration-500">
+                    <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-cosmicDark p-6">
+                        <span class="text-xs text-neonCyan font-bold uppercase tracking-wider">Missão Estelar 🚀</span>
+                        <p class="text-white font-bold text-lg">Sabores dignos do comando espacial!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CARDÁPIO -->
+    <section id="cardapio" class="py-20 bg-spaceBlack/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-neonCyan text-sm font-bold uppercase tracking-widest">Cardápio Interestelar</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-4">Escolha sua Rota Galáctica</h2>
+                <p class="text-slate-400 max-w-xl mx-auto">Ingredientes selecionados e redondas que parecem verdadeiras
+                    obras d'arte do espaço sideral.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- ITEM 1: Altere o nome, descrição, preço e a imagem (imagens/pizza-queijo.jpg) -->
+                <div
+                    class="bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden hover:border-solarOrange/50 transition group card-hover">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="imagens/pizza-queijo.jpg" alt="Pizza 4 Queijos"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                            onerror="this.src='https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80'">
+                        <span
+                            class="absolute top-3 left-3 bg-solarOrange text-white text-xs font-bold px-3 py-1 rounded-full shadow">Mais
+                            Vendida 🌌</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white">Pizza 4 Queijos Galáctica</h3>
+                        <p class="text-slate-400 text-sm mt-2">Molho artesanal, mussarela especial, provolone, requeijão
+                            cremoso e parmesão.</p>
+                        <div class="flex items-center justify-between mt-6 pt-4 border-t border-slate-800">
+                            <span class="text-2xl font-black text-stellarGold">R$ 58,90</span>
+                            <button onclick="adicionarAoCarrinho('Pizza 4 Queijos Galáctica')"
+                                class="bg-solarOrange hover:bg-orange-600 text-white px-4 py-2 rounded-lg font-bold text-sm transition shadow-lg shadow-orange-500/25">
+                                + Pedir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 2: Altere o nome, descrição, preço e a imagem (imagens/esfiha.jpg) -->
+                <div
+                    class="bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden hover:border-solarOrange/50 transition group card-hover">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="imagens/esfiha.jpg" alt="Esfirras Especiais"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                            onerror="this.src='https://images.unsplash.com/photo-1628840042765-356cda07504e?auto=format&fit=crop&w=600&q=80'">
+                        <span
+                            class="absolute top-3 left-3 bg-neonCyan text-slate-950 text-xs font-bold px-3 py-1 rounded-full shadow">Força
+                            Total ⭐</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white">Esfiha de Carne Especial (~15cm)</h3>
+                        <p class="text-slate-400 text-sm mt-2">Massa leve e fofinha com recheio extremamente generoso,
+                            tempero secreto.</p>
+                        <div class="flex items-center justify-between mt-6 pt-4 border-t border-slate-800">
+                            <span class="text-2xl font-black text-stellarGold">R$ 9,90</span>
+                            <button onclick="adicionarAoCarrinho('Esfiha de Carne Especial')"
+                                class="bg-solarOrange hover:bg-orange-600 text-white px-4 py-2 rounded-lg font-bold text-sm transition shadow-lg shadow-orange-500/25">
+                                + Pedir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ITEM 3: Altere o nome, descrição, preço e a imagem (imagens/pizza-doce.jpg) -->
+                <div
+                    class="bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden hover:border-solarOrange/50 transition group card-hover">
+                    <div class="h-52 overflow-hidden relative">
+                        <img src="imagens/pizza-doce.jpg" alt="Pizza Doce"
+                            class="w-full h-full object-cover group-hover:scale-110 transition duration-500"
+                            onerror="this.src='https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=600&q=80'">
+                        <span
+                            class="absolute top-3 left-3 bg-purple-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow">Doce
+                            Cometa 🌠</span>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-white">Pizza Doce Cometa</h3>
+                        <p class="text-slate-400 text-sm mt-2">Chocolate ao leite cremoso cobrindo rodelas de morangos
+                            frescos selecionados.</p>
+                        <div class="flex items-center justify-between mt-6 pt-4 border-t border-slate-800">
+                            <span class="text-2xl font-black text-stellarGold">R$ 49,90</span>
+                            <button onclick="adicionarAoCarrinho('Pizza Doce Cometa')"
+                                class="bg-solarOrange hover:bg-orange-600 text-white px-4 py-2 rounded-lg font-bold text-sm transition shadow-lg shadow-orange-500/25">
+                                + Pedir
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- UNIDADES -->
+    <section id="unidades" class="py-20 bg-cosmicDark">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-white mb-4">Nossas Bases na Terra</h2>
+                <p class="text-slate-400">Venha nos visitar ou peça com entrega rápida em sua cidade!</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Unidade Guaçu -->
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl shadow-xl">
+                    <h3 class="text-2xl font-bold text-stellarGold mb-2">Mogi Guaçu - SP 🚀</h3>
+                    <p class="text-slate-300 text-sm mb-4"><i class="fa-solid fa-star text-yellow-400 mr-1"></i> 4.6
+                        (706+ avaliações no Google)</p>
+                    <p class="text-slate-400 text-sm mb-2"><i
+                            class="fa-solid fa-location-dot text-solarOrange mr-2"></i> Av. dos Trabalhadores, 3615 -
+                        Jardim Almira</p>
+                    <p class="text-slate-400 text-sm mb-6"><i class="fa-solid fa-phone text-solarOrange mr-2"></i> (19)
+                        3831-2304</p>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="https://deliverydireto.com.br/pizzariaplanetario/pizzariaplanetario?s=w"
+                            target="_blank"
+                            class="flex-1 text-center bg-solarOrange hover:bg-orange-600 text-white font-bold py-3 rounded-xl transition shadow">
+                            <i class="fa-solid fa-globe mr-2"></i> Pedir Online
+                        </a>
+                        <a href="https://wa.me/551938312304?text=Olá,%20gostaria%20de%20fazer%20um%20pedido!"
+                            target="_blank"
+                            class="flex-1 text-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl transition shadow">
+                            <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Unidade Mirim -->
+                <div class="bg-slate-900 border border-slate-800 p-8 rounded-2xl shadow-xl">
+                    <h3 class="text-2xl font-bold text-stellarGold mb-2">Mogi Mirim - SP 🛸</h3>
+                    <p class="text-slate-300 text-sm mb-4"><i class="fa-solid fa-star text-yellow-400 mr-1"></i> 4.5
+                        (132+ avaliações no Google)</p>
+                    <p class="text-slate-400 text-sm mb-2"><i
+                            class="fa-solid fa-location-dot text-solarOrange mr-2"></i> R. Dr. Ulhôa Cintra, 481 -
+                        Centro</p>
+                    <p class="text-slate-400 text-sm mb-6"><i class="fa-solid fa-phone text-solarOrange mr-2"></i> (19)
+                        3804-0071</p>
+                    <div class="flex flex-col sm:flex-row gap-3">
+                        <a href="https://deliverydireto.com.br/pizzariaplanetario/pizzariaplanetario?s=w"
+                            target="_blank"
+                            class="flex-1 text-center bg-solarOrange hover:bg-orange-600 text-white font-bold py-3 rounded-xl transition shadow">
+                            <i class="fa-solid fa-globe mr-2"></i> Pedir Online
+                        </a>
+                        <a href="https://wa.me/551938040071?text=Olá,%20gostaria%20de%20fazer%20um%20pedido!"
+                            target="_blank"
+                            class="flex-1 text-center bg-green-600 hover:bg-green-700 text-white font-bold py-3 rounded-xl transition shadow">
+                            <i class="fa-brands fa-whatsapp mr-2"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-cosmicDark border-t border-slate-800 py-12 text-center text-slate-500 text-sm">
+        <p>© 1997 - 2026 Pizzaria Planetário. Que a força (e o sabor) esteja com você! 🚀✨</p>
+    </footer>
+
+    <!-- Nosso Arquivo de Interatividade (JavaScript) -->
+    <script src="script.js"></script>
+</body>
+
+</html>
